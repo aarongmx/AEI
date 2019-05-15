@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('{ruta}', function () {
+    return view('index');
+})->where('ruta', '.*');
